@@ -4,17 +4,28 @@ import HelloWorld from './components/HelloWorld';
 import Cat from './components/Cat';
 import State from './components/State';
 import PizzaTranslator from './components/PizzaTranslator';
+import FlatListBasic from './components/FlatListBasic';
+import SectionListBasic from './components/SectionListBasic';
+import FetchExample from './components/FetchExample';
 
-const logo = { uri: 'https://reactnative.dev/img/tiny_logo.png', width: 32, height: 32,};
+const logo = { uri: 'https://reactnative.dev/img/tiny_logo.png', width: 32, height: 32, };
+
 export default function App() {
   return (
-    <ScrollView>
+    <ScrollView style={{paddingTop: 24, paddingLeft: 2}}>
+      <Image source={logo} />
+      <FetchExample />
+      <Image source={logo} />
+      <SectionListBasic />
+      <Image source={logo} />
+      <FlatListBasic />
       <Image source={logo} />
       <PizzaTranslator />
-      <State name='Run Tum Yugger' />
+      <Image source={logo} />
+      <State name='Run Tum Tugger' />
       <Image source={logo} />
       <Cat name='Maru' num='1' />
-      <Cat name='Run Tum Yugger' num='2' />
+      <Cat name='Run Tum Tugger' num='2' />
       <Image source={logo} />
       <HelloWorld />
     </ScrollView>
